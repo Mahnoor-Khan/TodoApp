@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Estonia&family=Montserrat&display=swap');
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Montserrat', sans-serif;
+}
+body {
+    height:100vh;
+    width:100%;
+    background:pink;
+}
+.wrapper{
+    margin:120px auto;
+    max-width:400px;
+    width:100%;
+    background:white;
+    border-radius:5px;
+    padding:25px;
+
+}
+.wrapper header{
+    font-size:15px;
+    font-weight:30;
+    padding-bottom:25px;
+}
+.wrapper .toDoInput{
+    display:flex;
+    height:45px;
+    width:100%;
+    margin: 20px 0;
+}
+.toDoInput input{
+    width:85%;
+    height:100%;
+    border:1px solid #ccc;
+    font-size:17px;
+    border-radius:3px;
+    padding-left:15px;
+}
+.toDoInput button{
+    width:60px;
+    height:100%;
+    border:none;
+    outline:none;
+    background:purple;
+    color:white;
+    font-size: 22px;
+    cursor:pointer;
+    border-radius: 3px;
+    margin-left:5px;
+    opacity:0.6;
+    pointer-events: none;
+}
+.toDoInput button.active{
+    opacity: 1;
+    pointer-events: auto;
+}
+.wrapper .toDoList{
+max-height:250px;
+overflow-y: auto;
+}
+.toDoList li{
+    list-style: none;
+    height:45px;
+    line-height:45px;
+    position: relative;
+    background:rgb(243, 237, 237);
+    border-radius: 3px;
+    margin-bottom:8px;
+    padding:0 15px;
+    font-size: 20px;
+    overflow:hidden;
+}
+.toDoList li span.btnDel{
+    position: absolute;
+    right: -60px;
+    color: white;
+    width:45px;
+    text-align: center;
+    background: #e74c32;
+    border-radius: 0 3px 3px 0;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.toDoList li span.btnEdit{
+    position: absolute;
+    right: -45px;
+    color: white;
+    width:45px;
+    text-align: center;
+    background: #13d62d;
+    border-radius: 0 0px opx 0;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.toDoList li:hover span.btnDel{
+    right:0px;
+}
+.toDoList li:hover span.btnEdit{
+    right:45px;
+}
+.wrapper .footer{
+    display: flex;
+    width:100%;
+    margin-top:25px;
+    justify-content: space-around;
+    
+}
+.footer button{
+    border:none;
+    outline:none;
+    background:purple;
+    color:white;
+    font-size:16px;
+    cursor:pointer;
+    border-radius:3px;
+    padding:6px 10px;
+    
+   
+}
+ .change-btn{
+    background-color: #000;
+    border:0;
+    color:#fff;
+    font-size:18px;
+    padding:20px 50px;
+    cursor: pointer;
+}
+.changeTheme{
+    display: flex;
+    flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+.color-text{
+    font-size:15px;
+}
+
+
+.addBtn{
+    background-color: purple;
+    outline:none;
+    border:none;
+    font-size:25px;
+    color:white;
+} 
+
